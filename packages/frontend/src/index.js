@@ -6,6 +6,7 @@ const { isNonEmptyString } = require("@sonar-monorepo/utils");
  * @param {HTMLElement} container
  */
 function renderGreeting(name, container) {
+  console.log("This is just to trigger a PR in sonarqube");
   if (!isNonEmptyString(name)) {
     container.textContent = "Hello, stranger!";
     return;
